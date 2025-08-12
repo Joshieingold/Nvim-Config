@@ -25,35 +25,6 @@ use {
   "folke/tokyonight.nvim",
 }
 use {
-  "nvim-neo-tree/neo-tree.nvim",
-  branch = "v3.x",  -- use the latest stable version
-  requires = {
-    "nvim-lua/plenary.nvim",         -- Required
-    "nvim-tree/nvim-web-devicons",   -- Optional but recommended
-    "MunifTanjim/nui.nvim",          -- Required
-  },
-  config = function()
-    require("neo-tree").setup({
-      window = {
-        width = 30,
-        mappings = {
-          ["<space>"] = "none",  -- disable default space binding
-        },
-      },
-      filesystem = {
-        filtered_items = {
-          visible = true,
-          hide_dotfiles = false,
-        },
-      },
-    })
-
-    -- Keybinding to toggle Neo-tree
-    vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { noremap = true, silent = true })
-  end
-}
-
-use {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
     config = function()

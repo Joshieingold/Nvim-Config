@@ -7,4 +7,4 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>s", "\"+y")
-
+vim.keymap.set("n", "<leader>k", vim.diagnostic.open_float)
